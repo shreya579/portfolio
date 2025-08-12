@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shreya Pandey Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- AOS (Scroll Animations) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600&display=swap" rel="stylesheet" />
+
+
+    <!-- GLightbox (for certificates popup) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #a77b56 !important; /* unified background */
+  color: #fff; /* default text */
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link span {
+  color: #fdfdfd; /* improved from plain white */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active span {
+  color: #763e2f !important;
+  font-weight: 600;
+}
+
+/* Main Button - warm theme */
+.custom-btn-primary {
+  background-color: #ba997a;
+  color: #3a2b1a;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn-primary:hover,
+.custom-btn-primary:focus {
+  background-color: #a7805f;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(186, 153, 122, 0.4);
+}
+
+/* Outline Button */
+.custom-btn-outline {
+  background-color: transparent;
+  border: 2px solid #ba997a;
+  color: #ba997a;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-outline:hover,
+.custom-btn-outline:focus {
+  background-color: #ba997a;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(186, 153, 122, 0.4);
+}
+
+/* Experience Card */
+.exp-glow-card {
+  position: relative;
+  background: linear-gradient(135deg, #ba997a, #cbbba1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #222;
+}
+
+.exp-glow-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 5px rgba(186, 153, 122, 0.3),
+              0 0 25px 10px rgba(203, 187, 161, 0.15);
+}
+
+.exp-glow-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.exp-glow-card:hover::after {
+  left: 160%;
+}
+
+.exp-glow-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Skill Section */
+.skill-mf {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #a77b56;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.skill-mf .title-s {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff; /* improve contrast */
+  margin-bottom: 20px;
+}
+
+.skill-mf .skill {
+  margin-bottom: 18px;
+}
+
+.skill-mf .skill span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fdfdfd;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Progress container */
+.skill-mf .progress {
+  height: 14px;
+  background-color: #e5ddcf;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Animated bar */
+.skill-mf .progress-bar.skill-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #763e2f;
+  transition: width 2s ease-in-out;
+  border-radius: 10px;
+}
+
+
+/* 🌟 Experience Card */
+.exp-glow-card {
+  position: relative;
+  background: linear-gradient(135deg, #ba997a, #cbbba1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  color: #222;
+}
+
+.exp-glow-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 5px rgba(186, 153, 122, 0.3),
+              0 0 25px 10px rgba(203, 187, 161, 0.15);
+}
+
+.exp-glow-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.exp-glow-card:hover::after {
+  left: 160%;
+}
+
+.exp-glow-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 🌐 Mobile Experience Cards */
+@media (max-width: 768px) {
+  .exp-glow-card:hover {
+    transform: none;
+    box-shadow: 0 0 10px rgba(186, 153, 122, 0.3);
+  }
+
+  .exp-glow-card::after {
+    display: none;
+  }
+}
+
+/* 📊 Progress Bar */
+.progress-bar.bg-info {
+  background-color: #ba997a !important;
+  transition: width 1.2s ease;
+}
+
+/* 🔗 LinkedIn Button */
+.about-linkedin-btn {
+  background-color: #a77b56;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.about-linkedin-btn:hover {
+  background-color: #a77b56;
+  box-shadow: 0 0 10px rgba(186,153,122,0.4);
+}
+
+/* 🔢 Highlighted Numbers */
+.number {
+  color: #a77b56 !important;
+  font-weight: 700;
+  font-size: 36px;
+  transition: color 0.3s ease;
+}
+
+/* 📝 Resume Card */
+.resume-wrap {
+  background: linear-gradient(135deg, #ba997a, #cbbba1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(186, 153, 122, 0.15);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ba997a;
+  color: #222;
+}
+
+.resume-wrap:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(186, 153, 122, 0.4), 
+              0 0 40px rgba(203, 187, 161, 0.2); /* warmer, layered glow */
+}
+
+/* ✨ Glow Sweep (Updated) */
+.resume-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 245, 230, 0) 0%,
+    rgba(255, 245, 230, 0.25) 50%,
+    rgba(255, 245, 230, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.resume-wrap:hover::after {
+  left: 160%;
+}
+
+.resume-wrap .date {
+  color: #763e2f;
+}
+.resume-wrap ul li {
+  font-size: 13.5px;
+  margin-bottom: 6px;
+  color: #4a3f36; /* darker, warm gray-brown */
+  line-height: 1.6;
+}
+.resume-wrap .muted,
+.resume-wrap .subtext,
+.resume-wrap .text-muted,
+.resume-wrap p {
+  color: #4a3f36; /* or #3c322b for more punch */
+}
+
+/* === Underline Animation === */
+.underline-animate,
+.education-underline-animate {
+  height: 3px;
+  width: 0;
+  background-color: #6e4d33 !important;
+  border-radius: 2px;
+  margin-top: 8px;
+  transition: width 1s ease-out;
+}
+
+.underline-animate.animate-in-view,
+.education-underline-animate.animate-in-view {
+  width: 720px;
+}
+
+.education-glow {
+  position: relative;
+  background: linear-gradient(135deg, #d2b49a, #f0e2cf); /* updated: soft light beige blend */
+  padding: 25px;
+  border-radius: 12px;
+  color: #3a2b1a; /* strong warm text */
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.education-glow:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(186, 153, 122, 0.5);
+}
+
+.education-glow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 180%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.education-glow:hover::after {
+  left: 130%;
+}
+
+/* Ensure text remains warm and readable */
+.education-glow .date {
+  color: #7a4a3c;
+  font-weight: 600;
+}
+
+.education-glow h2 {
+  color: #2d1f16;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.education-glow .position {
+  color: #4e392b;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.education-glow p {
+  color: #463428;
+}
+
+
+/* === Download CV Button === */
+.education-custom-btn-primary {
+  background-color: #8a6547 !important; 
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(138, 101, 71, 0.3);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.education-custom-btn-primary:hover {
+  background-color: #6e4d33 !important;
+  color: #fff !important;
+  box-shadow: 0 0 15px rgba(138, 101, 71, 0.5);
+}
+
+
+/* === Typing Animation === */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #a7805f;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+/* === Resume Card Grid Equal Height === */
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.equal-height .col-md-4 {
+  flex: 0 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-height .resume-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: linear-gradient(135deg, #ba997a, #cbbba1);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(186, 153, 122, 0.2);
+  color: #222;
+}
+
+
+@media (max-width: 768px) {
+  .equal-height .col-md-4 {
+    flex: 0 1 100%;
+  }
+}
+
+.certificate-gallery img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(186, 153, 122, 0.15); /* warm glow instead of white */
+}
+
+.certificate-gallery h6 {
+  color: #3a2b1a; /* warm text instead of bright white */
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* Certificate/project zoom + glow effect */
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Certificate Column */
+.certificate-gallery .col-md-4 {
+  display: flex;
+}
+
+/* Certificate Card */
+.cert-card {
+  position: relative;
+  background: linear-gradient(135deg, #fff7ed, #cbbba1); /* softened warm blend */
+  padding: 1rem 1rem 2.5rem;
+  border-radius: 12px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  color: #3a2b1a; /* warm text for beige */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.cert-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px 2px rgba(186, 153, 122, 0.4),
+              0 0 20px 6px rgba(203, 187, 161, 0.2);
+}
+
+/* Shine effect */
+.cert-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.cert-card:hover::after {
+  left: 130%;
+}
+
+/* Certificate title */
+.cert-card h6 {
+  color: #3a2b1a !important;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+  z-index: 3;
+}
+
+/* View Button */
+.cert-card .verify-btn {
+  margin-top: 1rem;
+  background-color: #ba997a !important;
+  color: white !important;
+  padding: 8px 18px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 3;
+}
+
+.cert-card .verify-btn:hover {
+  background-color: #a7805f !important;
+  box-shadow: 0 0 10px rgba(186, 153, 122, 0.4);
+}
+
+/* Image layering */
+.cert-card img {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+/* ===== Project Card Grid Layout ===== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* smaller card width */
+  column-gap: 20px; /* space between columns */
+  row-gap: 20px;    /* reduced row gap */
+  justify-content: center;
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* reduced gap for flex rows */
+}
+
+
+/* ===== Project Card Base ===== */
+/* Reduce gap between project cards */
+#project-section .row.g-4 {
+  margin-left: -10px;  
+  margin-right: -10px;
+}
+
+#project-section .row.g-4 > * {
+  padding-left: 10px;  
+  padding-right: 10px;
+  margin-bottom: 20px; 
+}
+
+
+.project-card {
+  background: linear-gradient(135deg, #ab8059, #c3ae8b); /* your update */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(186, 153, 122, 0.3);
+  transition: transform 0.3s ease;
+  position: relative;
+  color: #222;
+}
+
+
+.project-card .text {
+  font-size: 0.85rem; /* smaller description text */
+  line-height: 1.5;
+}
+
+.project-thumbnail {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.project-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px 2px rgba(186, 153, 122, 0.4),
+              0 0 20px 6px rgba(203, 187, 161, 0.2); /* updated glow */
+}
+
+.project-glow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project-glow:hover::after {
+  left: 140%;
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+}
+.zoom-effect:hover {
+  transform: scale(1.035);
+}
+
+.preview-button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e8e1d5; /* soft warm background */
+  padding: 10px;
+  border-top: 1px solid #d2c5b4;
+  margin-top: auto;
+}
+
+.btn-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3a2b1a;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-action svg {
+  fill: #ba997a;
+  transition: fill 0.3s ease;
+}
+
+.btn-action:hover svg {
+  fill: #3a2b1a;
+}
+
+.btn-label {
+  font-size: 11px;
+  color: #6b5e4f;
+  font-weight: 600;
+}
+/* Add vertical spacing between the two card rows */
+#project-section .container > .row.g-4 {
+  margin-bottom: 2rem;
+}
+#project-section .container > .row.g-4:last-of-type {
+  margin-bottom: 0; /* no extra gap after the last row */
+}
+
+
+/* Text under icons */
+.github-btn span,
+.preview-btn span {
+  font-size: 11px;
+  font-weight: 600;
+  color: #5e4b3d; /* warmer gray tone */
+}
+
+/* ===== Modal Viewer for PDF Preview ===== */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.custom-modal-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  background: #cbbba1; /* updated to match theme */
+  border-radius: 10px;
+  overflow: hidden;
+  color: #222;
+}
+
+.custom-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ba997a;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.custom-close:hover {
+  color: #3a2b1a; /* darker warm tone on hover */
+}
+
+.glow-experience {
+  position: relative;
+  background: linear-gradient(135deg, #ba997a, #cbbba1); /* updated background */
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+  color: #222;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 70px 50px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.dashboard-card-wrapper {
+  perspective: 1600px;
+  width: 100%;
+  max-width: 100%;
+  height: 320px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.dashboard-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  position: relative;
+}
+
+.dashboard-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.dashboard-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dashboard-front {
+  z-index: 2;
+}
+
+.dashboard-back {
+  transform: rotateY(180deg);
+}
+
+.dashboard-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dashboard-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(58, 43, 26, 0.6); /* warm beige overlay */
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.dashboard-card-outer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ba997a, #cbbba1); /* updated background */
+  box-shadow: 0 6px 16px rgba(186, 153, 122, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.dashboard-card-outer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px 2px rgba(186, 153, 122, 0.4),
+              0 0 20px 6px rgba(203, 187, 161, 0.15); /* smoother outer glow */
+}
+
+.dashboard-card-outer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.dashboard-card-outer:hover::after {
+  left: 125%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.powerbi-badge {
+  background-color: #f7c700;
+  color: #000;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+
+.dashboard-btn {
+  background-color: #ba997a !important;
+  color: white !important;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #a7805f !important;
+  box-shadow: 0 0 10px rgba(186, 153, 122, 0.4) !important;
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(186, 153, 122, 0.2); /* warmer glow */
+  object-fit: contain;
+}
+
+.modal .close {
+  color: #ba997a;
+  font-size: 28px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #3a2b1a;
+}
+
+#modalCaption {
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
+/* 🌐 GitHub CTA Custom Background + Glass Effect */
+.github-button-custom {
+  background-color: #ba997a;
+  color: white;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(186, 153, 122, 0.4);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.github-button-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 28px rgba(186, 153, 122, 0.6);
+}
+
+.contact-info a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  display: inline-block;
+}
+
+.contact-info .box {
+  background-color: #cbbba1;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #222;
+}
+
+.contact-info .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(186, 153, 122, 0.4),
+              0 0 30px rgba(203, 187, 161, 0.6);
+}
+
+/* ✨ Shine Sweep */
+.contact-info .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.05)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contact-info .box:hover::after {
+  left: 125%;
+}
+
+/* 🧊 Icon Style Inside Box */
+.contact-info .icon {
+  z-index: 2;
+  position: relative;
+}
+
+.contact-info .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+    overflow-x: hidden;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .custom-btn-primary,
+  .custom-btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .one-third,
+  .one-forth,
+  .col-md-6,
+  .col-md-4,
+  .col-lg-4 {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .img-about img {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-mf .progress {
+    height: 10px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+
+  .dashboard-card-wrapper {
+    height: 250px;
+  }
+
+  .project-thumbnail {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .project-card .text p,
+  .cert-card h6,
+  .btn-label {
+    font-size: 13px;
+  }
+
+  .preview-button-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+
+
+  </head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <nav class="navbar navbar-expand-lg navbar-light site-navbar-target" id="ftco-navbar" style="background-color: #a88a6e;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="color: #fff;">Shreya Pandey</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home-section" class="hero" style="background-color: #845f40;">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay" style="background-color: rgba(167, 123, 86, 0.5);"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+
+            <!-- ✅ Profile Image -->
+            <div class="one-third js-fullheight order-md-last img" style="background-image: url('images/shreya_new_background.png'); background-size: cover; border-radius: 10px;">
+              <div class="overlay" style="background: rgba(0, 0, 0, 0.4); border-radius: 10px;"></div>
+            </div>
+
+            <!-- ✅ Main Text -->
+            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading" style="color: #cbbba1;">Welcome</span>
+                <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span style="color: #cbbba1;">Shreya Pandey</span></h1>
+
+                <!-- ✅ Typing Role Animation -->
+                <h2><span id="typing-role" style="color: #cbbba1; font-weight: 600;"></span></h2>
+
+                <p class="mb-4 mt-3" style="color: #f5f5f5;">
+                  Passionate about turning complex data into meaningful insights.<br>
+                  Skilled in SQL, Python, Machine Learning & Visualization Tools.
+                </p>
+
+                <p>
+                  <a href="https://www.linkedin.com/in/shreya-pandey-97252431b/"
+                     class="btn custom-btn-primary py-3 px-4">
+                     LinkedIn
+                  </a>
+
+                  <a href="https://github.com/shreya579"
+                     class="btn custom-btn-outline py-3 px-4">
+                     View My Work
+                  </a>
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Typing Role Script -->
+  <script>
+    const roles = ["Data Analyst", "Student", "ML Intern", "SQL Enthusiast", "Power BI Explorer"];
+    const typingElement = document.getElementById("typing-role");
+    let roleIndex = 0;
+    let charIndex = 0;
+
+    function typeRole() {
+      if (charIndex < roles[roleIndex].length) {
+        typingElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeRole, 120);
+      } else {
+        setTimeout(() => {
+          typingElement.textContent = '';
+          roleIndex = (roleIndex + 1) % roles.length;
+          charIndex = 0;
+          setTimeout(typeRole, 300);
+        }, 1500);
+      }
+    }
+
+    typeRole();
+  </script>
+
+<section class="ftco-about img ftco-section pt-5 pb-5" id="about-section" style="background-color: #cbbba1; color: #ccc;">
+  <div class="container">
+    <div class="row d-flex align-items-stretch">
+      <!-- Profile Card -->
+      <div class="col-md-6 col-lg-5 d-flex">
+        <!-- Card -->
+        <div class="img-about img d-flex align-items-stretch exp-glow-card">
+          <div class="overlay p-3 w-100" style="background-color: rgba(0,0,0,0.7); border-radius: 12px;">
+            <div class="row">
+              <div class="col-sm-6 col-md-5">
+                <div class="about-img mb-3">
+                  <img src="images/Shreya_about.png" class="img-fluid rounded shadow" alt="Profile">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-7">
+                <div class="about-info text-white small">
+                  <p><strong>Name:</strong> Shreya Pandey</p>
+                  <p><strong>Role:</strong> Data Analyst</p>
+                  <p><strong>Experience:</strong> Fresher</p>
+                  <p><strong>Location:</strong> Gurgaon, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-mf">
+  <p class="title-s">Skills</p>
+
+  <div class="skill">
+    <span>SQL <span class="float-right">95%</span></span>
+    <div class="progress"><div class="progress-bar skill-bar" data-width="95%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Python <span class="float-right">85%</span></span>
+    <div class="progress"><div class="progress-bar skill-bar" data-width="85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Data Visualization <span class="float-right">90%</span></span>
+    <div class="progress"><div class="progress-bar skill-bar" data-width="90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Statistical Analysis <span class="float-right">85%</span></span>
+    <div class="progress"><div class="progress-bar skill-bar" data-width="85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Machine Learning <span class="float-right">80%</span></span>
+    <div class="progress"><div class="progress-bar skill-bar" data-width="80%"></div></div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const skillBars = document.querySelectorAll(".skill-bar");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          bar.style.width = bar.getAttribute("data-width");
+          observer.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    skillBars.forEach(bar => observer.observe(bar));
+  });
+</script>
+
+
+
+      <!-- About Text -->
+      <div class="col-md-6 col-lg-7 pl-lg-5 pb-5 ftco-animate">
+        <div class="row justify-content-start pb-3">
+          <div class="col-md-12 heading-section">
+            <h1 class="big" style="color:#b79677;">About</h1>
+            <h2 class="mb-4" style="color:#fff;">About Me</h2>
+            <p style="color: #763e2f;">
+              Detail-oriented and results-driven Data Analyst with experience turning raw data into actionable insights using Power BI, SQL, Python, and Excel.
+              Skilled in data visualization, wrangling, and statistical analysis to solve real-world problems in insurance, e-commerce, crime, and content analytics.
+              Adept at collaborating with teams, communicating insights, and delivering high-impact results on time across multiple projects.
+            </p>
+            <ul class="about-info mt-4 px-md-0 px-2 text-white big">
+              <li class="d-flex"><span>Data Analytics:</span> <span>Data Analysis, Business Intelligence, Exploratory Data Analysis (EDA), Segmentation</span></li>
+              <li class="d-flex"><span>Data Visualization:</span> <span>Power BI, Excel, Tableau, Matplotlib, Seaborn, Pivot Tables, DAX, Power Query</span></li>
+              <li class="d-flex"><span>Programming:</span> <span>Python, Pandas, NumPy, Scikit-learn, SHAP</span></li>
+              <li class="d-flex"><span>Databases & SQL:</span> <span>MySQL, SQL Server, Joins, CTEs, Subqueries, Window Functions</span></li>
+              <li class="d-flex"><span>Tools & Platforms:</span> <span>Streamlit, GitHub, Hugging Face Spaces, Jupyter Notebook</span></li>
+              <li class="d-flex"><span>Soft Skills:</span> <span>Problem Solving, Stakeholder Communication, Critical Thinking, Project Management</span></li>
+              <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+          <div class="text">
+            <p class="mb-4">
+              <span class="number" data-number="10">0</span>+ <span> Projects Completed</span>
+            </p>
+            <p><a href="https://www.linkedin.com/in/shreya-pandey-97252431b/" class="btn about-linkedin-btn py-2 px-3">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	
+<section class="ftco-section ftco-no-pb" id="resume-section" style="background-color: #845f40;">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2" style="color: #b79677;">Resume</h1>
+        <h2 class="mb-4" style="color: #ffffff;">Resume</h2>
+        <p style="color: #ffffff;">
+          Aspiring Data Analyst with a strong foundation in mathematics, programming, and data analysis.
+          Skilled in Python, SQL, and Power BI, with hands-on experience in building predictive models and uncovering insights from diverse datasets.
+        </p>
+      </div>
+    </div>
+
+<!-- Experience Heading -->
+<div class="row justify-content-center">
+  <div class="col-md-8 text-center">
+    <h1 class="big-4" style="color: #ffffff;">Experience</h1>
+    <div class="underline-animate mx-auto"></div>
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const underline = document.querySelector('.underline-animate');
+    if (!underline) return;
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in-view');
+          observer.unobserve(entry.target); // run once
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(underline);
+  });
+</script>
+
+
+
+
+
+    <br />
+
+    <!-- Experience Cards -->
+    <div class="row equal-height gy-4">
+
+      <!-- Experience 1 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+         <div class="resume-wrap resume-glow ftco-animate">
+          <span class="date">2024 – 2025</span>
+          <h2>Data Science Intern</h2>
+          <span class="position">Learnbay</span>
+          <p class="mt-3 text-light">
+            Participated in industry-aligned projects as part of an intensive data science internship program.
+          </p>
+          <ul class="text-muted">
+            <li>Developed and deployed ML models (regression, classification) using Python & Scikit-learn.</li>
+            <li>Performed end-to-end data analysis across banking, healthcare, retail, and agriculture domains.</li>
+            <li>Built Power BI dashboards for KPI tracking and business intelligence.</li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Experience 2: Tata Data Visualization -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+  <div class="resume-wrap resume-glow ftco-animate">
+    <span class="date">June 2025</span>
+    <h2>Data Visualization & Business Insights</h2>
+    <span class="position">Tata Consultancy Services (Forage)</span>
+    <p class="mt-3 text-light">
+      Completed a job simulation focused on transforming business data into meaningful insights for executive decision-making.
+    </p>
+    <ul class="text-muted">
+      <li>Designed impactful dashboards and visualizations based on real-world business metrics.</li>
+      <li>Prepared strategic questions for senior leadership to drive productive discussions.</li>
+      <li>Delivered analysis-ready visuals to support data-driven decisions at the executive level.</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Experience 3: Quantium Simulation (Concise) -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+  <div class="resume-wrap resume-glow ftco-animate">
+    <span class="date">July 2025</span>
+    <h2>Data Analytics & Commercial Insights</h2>
+    <span class="position">Quantium (Forage)</span>
+    <p class="mt-3 text-light">
+      Completed a simulation focused on customer analytics, commercial reporting, and uplift testing.
+    </p>
+    <ul class="text-muted">
+      <li>Analyzed transaction data to extract insights and support retail decisions.</li>
+      <li>Conducted benchmark store analysis and trial uplift evaluation.</li>
+      <li>Delivered strategic recommendations to Category Managers.</li>
+    </ul>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,   // animation duration (ms)
+    once: true        // animate only once when scrolling
+  });
+</script>
+
+
+        
+		<!-- ✅ Certificate Gallery Section (Add this below your Experience section) -->
+<section id="certificates" class="ftco-section" style="background-color: #cbbba1;">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-4" style="color: #3a2b1a;">My Certificates</h2>
+        <p style="color: #4a3f36;">A few recognitions from my journey in Data Science and Analytics.</p>
+      </div>
+    </div>
+    <div class="row certificate-gallery text-center">
+
+      <!-- Certificate 1 -->
+<!-- Certificate 1 -->
+<div class="col-md-4 mb-4" data-aos="fade-up">
+  <div class="cert-card">
+    <a href="images/certificates/ML IBM Certificate_page-0001.jpg" class="glightbox" data-gallery="certs">
+      <img src="images/certificates/ML IBM Certificate_page-0001.jpg" class="img-fluid rounded shadow-sm zoom-effect glow-hover" alt="IBM Certificate" />
+    </a>
+    <h6 class="mt-3 text-white">IBM Data Science & AI (Learnvista)</h6>
+    <a href="https://learnvista.skillsnetwork.site/certificates/460d2e2e-d205-4a0d-85c9-f4d4357d0bcb"
+       target="_blank" rel="noopener noreferrer"
+       class="btn btn-sm btn-outline-light mt-2">
+       View Certificate Verification
+    </a>
+  </div>
+</div>
+
+<!-- Certificate 2 -->
+<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+  <div class="cert-card">
+    <a href="images/certificates/Tata Certificate_page-0001.jpg" class="glightbox" data-gallery="certs">
+      <img src="images/certificates/Tata Certificate_page-0001.jpg" class="img-fluid rounded shadow-sm zoom-effect glow-hover" alt="Accenture Certificate" />
+    </a>
+    <h6 class="mt-3 text-white">Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation</h6>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_uav4cn3tSz2iwpJkL_1745040421220_completion_certificate.pdf" 
+       target="_blank" rel="noopener noreferrer"
+       class="btn btn-sm btn-outline-light mt-2">
+       View Certificate Verification
+    </a>
+  </div>
+</div>
+
+<!-- Certificate 3 -->
+<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+  <div class="cert-card">
+    <a href="images/certificates/Quantium Analytics Certificate_page-0001.jpg" class="glightbox" data-gallery="certs">
+      <img src="images/certificates/Quantium Analytics Certificate_page-0001.jpg" class="img-fluid rounded shadow-sm zoom-effect glow-hover" alt="Tata Certificate" />
+    </a>
+    <h6 class="mt-3 text-white">Quantium Data Analytics Job Simulation</h6>
+    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_uav4cn3tSz2iwpJkL_1748770243781_completion_certificate.pdf" 
+       target="_blank" rel="noopener noreferrer"
+       class="btn btn-sm btn-outline-light mt-2">
+       View Certificate Verification
+    </a>
+  </div>
+</div>
+
+</section>
+
+<!-- ✅ Required Scripts for Animation and Lightbox (Put at end of body) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: false,
+      width: '90vw',
+      height: '90vh',
+      openEffect: 'fade',
+      closeEffect: 'fade',
+      zoomable: true
+    });
+  });
+</script>
+
+<!-- Education Section -->
+<section class="ftco-section ftco-no-pb" style="background-color: #ac8d71;" id="education-section">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h1 class="big-4" style="color: #6e4d33;">Education</h1>
+        <div class="education-underline-animate mx-auto"></div>
+      </div>
+    </div>
+
+    <br>
+
+<!-- Education Cards with AOS Animation -->
+<div class="row gy-4">
+  <!-- Degree 1 -->
+  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="education-glow">
+      <span class="date">2021 – 2024</span>
+      <h2>Bachelor of Commerce</h2>
+      <span class="position">Patna University</span>
+      <p class="mt-3 text-light">Grade: First Class with Distinction</p>
+    </div>
+  </div>
+
+  <!-- Degree 2 -->
+  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="education-glow">
+      <span class="date">2019 – 2021</span>
+      <h2>Higher Secondary Education</h2>
+      <span class="position">Cambridge Sr. Sec. School (CBSE Board)</span>
+      <p class="mt-3 text-light">Grade: First Class with Distinction</p>
+    </div>
+  </div>
+</div>
+
+<!-- Download CV Button -->
+<div class="row justify-content-center mt-5" data-aos="zoom-in" data-aos-delay="300"> 
+  <div class="col-md-6 text-center">
+    <a href="pdfs/Sahil_Jena_Data_Analyst_Resume_2025.pdf" download class="education-custom-btn-primary px-5 py-3">
+      Download CV
+    </a>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const underline = document.querySelector('.education-underline-animate');
+    if (!underline) return;
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(underline);
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+
+
+<!-- ✅ Full Project Cards Section with Warm Theme -->
+<section class="ftco-section" id="project-section" style="background-color: #cbbba1;">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="row justify-content-center mb-5 pb-4">
+      <div class="col-md-8 heading-section text-center ftco-animate" data-aos="fade-down">
+        <h1 class="big big-2" style="color: #b49572;">Projects</h1>
+        <h2 class="mb-4" style="color: #4e392b;">Projects</h2>
+        <p style="color: #5a4a3c;">Sample Data Analytics projects using SQL, Python, Power BI, and ML techniques.</p>
+      </div>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+        <div class="project-card project-glow zoom-effect" style="background-color: #e0d4c3; border-radius: 12px; padding: 1rem;">
+          <div class="project-thumbnail" style="background-image: url('images/proj_1.jpg'); border-radius: 8px; height: 180px; background-size: cover;"></div>
+          <div class="text mt-3">
+            <h3 class="heading" style="font-weight: 600;">
+              <a href="https://github.com/shreya579/MoMA-ModernArt-Analytics" style="color: #763e2f;">
+                MoMA ModernArt Analytics
+              </a>
+            </h3>
+            <p style="color: #43362b; font-size: 0.95rem;">
+              Built SQL Server queries to analyze MoMA’s 1929–2024 collection and developed interactive Power BI dashboards uncovering acquisition trends, artist influence, and medium classifications.
+            </p>
+            <div class="preview-button-wrapper d-flex justify-content-around mt-3">
+              <div class="action-wrapper text-center">
+                <a href="https://github.com/shreya579/MoMA-ModernArt-Analytics" target="_blank" class="btn-action github-btn" style="color: #763e2f;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28
+                       -.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+                       -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02
+                       .08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012-.27c.68.003 1.36.092 2 .27 1.53
+                       -1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15
+                        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                        0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <div class="btn-label" style="color: #4e392b;">FULL PROJECT</div>
+              </div>
+              <div class="action-wrapper text-center">
+                <a href="#" class="btn-action preview-btn" onclick="openPDFModal('pdfs/Museum Collection Insights PPT.pdf')" style="font-size: 1.25rem;">🔍</a>
+                <div class="btn-label" style="color: #4e392b;">PREVIEW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+        <div class="project-card project-glow zoom-effect" style="background-color: #fdf8f0; border-radius: 12px; padding: 1rem;">
+          <div class="project-thumbnail" style="background-image: url('images/bank_interest_wallpaper.jpg'); border-radius: 8px; height: 180px; background-size: cover;"></div>
+          <div class="text mt-3">
+            <h3 class="heading" style="font-weight: 600;">
+              <a href="https://github.com/shreya579/Credit-Risk-Profiler" style="color: #763e2f;">
+                Credit Risk Profiler
+              </a>
+            </h3>
+            <p style="color: #43362b; font-size: 0.95rem;">
+              End-to-end credit risk classification using XGBoost with advanced feature engineering, SMOTETomek balancing, and actionable risk profiling for smarter lending decisions
+            </p>
+            <div class="preview-button-wrapper d-flex justify-content-around mt-3">
+              <div class="action-wrapper text-center">
+                <a href="https://github.com/shreya579/Credit-Risk-Profiler" target="_blank" class="btn-action github-btn" style="color: #763e2f;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28
+                       -.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+                       -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02
+                       .08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012-.27c.68.003 1.36.092 2 .27 1.53
+                       -1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15
+                        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                        0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <div class="btn-label" style="color: #4e392b;">FULL PROJECT</div>
+              </div>
+              <div class="action-wrapper text-center">
+                <a href="#" class="btn-action preview-btn" onclick="openPDFModal('pdfs/Predicting_interest_rate.pdf')" style="font-size: 1.25rem;">🔍</a>
+                <div class="btn-label" style="color: #4e392b;">PREVIEW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+        <div class="project-card project-glow zoom-effect" style="background-color: #fdf8f0; border-radius: 12px; padding: 1rem;">
+          <div class="project-thumbnail" style="background-image: url('images/sales_dashboard.png'); border-radius: 8px; height: 180px; background-size: cover;"></div>
+          <div class="text mt-3">
+            <h3 class="heading" style="font-weight: 600;">
+              <a href="https://github.com/shreya579/Olist-Order-Intelligence-Unveiling-E-Commerce-Patterns-with-Power-BI" style="color: #763e2f;">
+                Olist E-Commerce Insights in Power BI
+              </a>
+            </h3>
+            <p style="color: #43362b; font-size: 0.95rem;">
+              Leveraged Power BI to analyze Olist’s e-commerce data—visualizing customer behavior, delivery patterns, revenue trends, and category performance for actionable retail insights.
+            </p>
+            <div class="preview-button-wrapper d-flex justify-content-around mt-3">
+              <div class="action-wrapper text-center">
+                <a href="https://github.com/shreya579/Olist-Order-Intelligence-Unveiling-E-Commerce-Patterns-with-Power-BI" target="_blank" class="btn-action github-btn" style="color: #763e2f;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28
+                       -.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+                       -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02
+                       .08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012-.27c.68.003 1.36.092 2 .27 1.53
+                       -1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15
+                        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                        0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <div class="btn-label" style="color: #4e392b;">FULL PROJECT</div>
+              </div>
+              <div class="action-wrapper text-center">
+                <a href="#" class="btn-action preview-btn" onclick="openPDFModal('pdfs/Ecommerce Analytics Project Presetation.pdf')" style="font-size: 1.25rem;">🔍</a>
+                <div class="btn-label" style="color: #4e392b;">PREVIEW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+        <div class="project-card project-glow zoom-effect" style="background-color: #fdf8f0; border-radius: 12px; padding: 1rem;">
+          <div class="project-thumbnail" style="background-image: url('images/store_wallpaper.jpg'); border-radius: 8px; height: 180px; background-size: cover;"></div>
+          <div class="text mt-3">
+            <h3 class="heading" style="font-weight: 600;">
+              <a href="https://github.com/shreya579/Retail-Analytics-Superstore" style="color: #763e2f;">
+                Retail Analytics Superstore using Python
+              </a>
+            </h3>
+            <p style="color: #43362b; font-size: 0.95rem;">
+               Unlocking retail intelligence through powerful exploratory data analysis of Superstore sales. Actionable insights. Regional trends. Profitability uncovered.
+            </p>
+            <div class="preview-button-wrapper d-flex justify-content-around mt-3">
+              <div class="action-wrapper text-center">
+                <a href="https://github.com/shreya579/Retail-Analytics-Superstore" target="_blank" class="btn-action github-btn" style="color: #763e2f;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28
+                       -.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+                       -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02
+                       .08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012-.27c.68.003 1.36.092 2 .27 1.53
+                       -1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15
+                        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                        0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <div class="btn-label" style="color: #4e392b;">FULL PROJECT</div>
+              </div>
+              <div class="action-wrapper text-center">
+                <a href="#" class="btn-action preview-btn" onclick="openPDFModal('pdfs/Superstore_analysis.pdf')" style="font-size: 1.25rem;">🔍</a>
+                <div class="btn-label" style="color: #4e392b;">PREVIEW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+        <div class="project-card project-glow zoom-effect" style="background-color: #fdf8f0; border-radius: 12px; padding: 1rem;">
+          <div class="project-thumbnail" style="background-image: url('images/finance-accounting-analyze.jpg'); border-radius: 8px; height: 180px; background-size: cover;"></div>
+          <div class="text mt-3">
+            <h3 class="heading" style="font-weight: 600;">
+              <a href="https://github.com/shreya579/LendingLens-SQL-Powered-Insights-into-Financial-Loan-Behavior" style="color: #763e2f;">
+                LendingLens: Loan Behavior Analytics
+              </a>
+            </h3>
+            <p style="color: #43362b; font-size: 0.95rem;">
+              Conducted SQL analysis on consumer loans to reveal borrower behavior, financial health, and regional lending trends for data-driven banking decisions.
+            </p>
+            <div class="preview-button-wrapper d-flex justify-content-around mt-3">
+              <div class="action-wrapper text-center">
+                <a href="https://github.com/shreya579/LendingLens-SQL-Powered-Insights-into-Financial-Loan-Behavior" target="_blank" class="btn-action github-btn" style="color: #763e2f;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+                       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28
+                       -.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28
+                       -.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02
+                       .08-2.12 0 0 .67-.21 2.2.82a7.62 7.62 0 012-.27c.68.003 1.36.092 2 .27 1.53
+                       -1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.27.82 2.15
+                        0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                        0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+                <div class="btn-label" style="color: #4e392b;">FULL PROJECT</div>
+              </div>
+              <div class="action-wrapper text-center">
+                <a href="#" class="btn-action preview-btn" onclick="openPDFModal('pdfs/finance_analysis_preview.pdf')" style="font-size: 1.25rem;">🔍</a>
+                <div class="btn-label" style="color: #4e392b;">PREVIEW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- PDF Modal -->
+<div id="pdfModal" class="custom-modal">
+  <div class="custom-modal-content">
+    <span class="custom-close" onclick="closePDFModal()">&times;</span>
+    <iframe id="pdfViewer" src="" width="100%" height="100%" style="border: none;"></iframe>
+  </div>
+</div>
+
+<!-- Modal JS -->
+<script>
+  function openPDFModal(pdfPath) {
+    document.getElementById('pdfViewer').src = pdfPath + "#toolbar=0";
+    document.getElementById('pdfModal').style.display = "block";
+  }
+  function closePDFModal() {
+    document.getElementById('pdfModal').style.display = "none";
+    document.getElementById('pdfViewer').src = "";
+  }
+</script>
+
+<!-- AOS Animation -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>
+  AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+</script>
+
+
+<!-- ✅ DASHBOARD SECTION -->
+<section id="dashboard-section" style="padding: 5rem 0; background: linear-gradient(135deg, #cbbba1, #845f40);">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h1 style="color: #4e392b; font-size: 2.8rem; font-weight: 700;">Dashboards</h1>
+      <h2 style="color: #2d1f17;" class="mb-3">Interactive Power BI Dashboards</h2>
+      <p style="color: #5a4a3c;">Click to flip, double-click to view full dashboard pages in slider mode.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <!-- CARD 1 -->
+      <div class="dashboard-card-outer">
+        <div class="dashboard-card-wrapper" onclick="handleFlip(this)" ondblclick="openSliderModal(['images/dash1_pg1.jpg','images/dash1_pg2.jpg'], 'Sales Dashboard')" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dashboard-card">
+            <div class="dashboard-face dashboard-front">
+              <img src="images/dash1_pg1.jpg" alt="Front">
+              <div class="dashboard-title">Sales Analytics Dashboard</div>
+            </div>
+            <div class="dashboard-face dashboard-back">
+              <img src="images/dash1_pg2.jpg" alt="Back">
+              <div class="dashboard-title">Sales Analytics Dashboard</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="badge powerbi-badge" style="background-color: #4e392b; color: #fff;">Power BI</span>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="dashboard-card-outer">
+        <div class="dashboard-card-wrapper" onclick="handleFlip(this)" ondblclick="openSliderModal(['images/Crime_analysis_page-0001.jpg','images/Crime_analysis_page-0002.jpg'], 'Crime Insights')" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dashboard-card">
+            <div class="dashboard-face dashboard-front">
+              <img src="images/Crime_analysis_page-0001.jpg" alt="Front">
+              <div class="dashboard-title">Crime Analysis Report</div>
+            </div>
+            <div class="dashboard-face dashboard-back">
+              <img src="images/Crime_analysis_page-0002.jpg" alt="Back">
+              <div class="dashboard-title">Crime Analysis Report</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="badge powerbi-badge" style="background-color: #4e392b; color: #fff;">Power BI</span>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="dashboard-card-outer">
+        <div class="dashboard-card-wrapper" onclick="handleFlip(this)" ondblclick="openSliderModal(['images/dash3_pg1.jpg','images/dash3_pg2.jpg'], 'Crime Analysis')" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dashboard-card">
+            <div class="dashboard-face dashboard-front">
+              <img src="images/dash3_pg1.jpg" alt="Front">
+              <div class="dashboard-title">Museum Collection Insights</div>
+            </div>
+            <div class="dashboard-face dashboard-back">
+              <img src="images/dash3_pg2.jpg" alt="Back">
+              <div class="dashboard-title">Museum Collection Insights</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="badge powerbi-badge" style="background-color: #4e392b; color: #fff;">Power BI</span>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="dashboard-card-outer">
+        <div class="dashboard-card-wrapper" onclick="handleFlip(this)" ondblclick="openSliderModal(['images/dash4_pg1.jpg','images/dash4_pg2.jpg'], 'ER Analysis')" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dashboard-card">
+            <div class="dashboard-face dashboard-front">
+              <img src="images/dash4_pg1.jpg" alt="Front">
+              <div class="dashboard-title">ER Analysis Report</div>
+            </div>
+            <div class="dashboard-face dashboard-back">
+              <img src="images/dash4_pg2.jpg" alt="Back">
+              <div class="dashboard-title">ER Analysis Report</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="badge powerbi-badge" style="background-color: #4e392b; color: #fff;">Power BI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODAL SLIDER -->
+<div id="imageModal" class="modal" onclick="closeSliderModal()">
+  <span class="close" onclick="closeSliderModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="modalCaption" class="text-white text-center mt-3"></div>
+</div>
+
+<audio id="flip-audio" src="sounds/flip.mp3" preload="auto"></audio>
+
+<script>
+function handleFlip(wrapper) {
+  const card = wrapper.querySelector('.dashboard-card');
+  card.classList.toggle('flipped');
+  const audio = document.getElementById("flip-audio");
+  if (audio) audio.play();
+}
+
+function openSliderModal(images, title) {
+  let current = 0;
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  const modalCaption = document.getElementById('modalCaption');
+
+  function show(index) {
+    modalImg.src = images[index];
+    modalCaption.innerText = `${title} - Page ${index + 1}`;
+  }
+
+  modal.style.display = 'flex';
+  show(current);
+  modal.onclick = (e) => {
+    e.stopPropagation();
+    current = (current + 1) % images.length;
+    show(current);
+  }
+}
+
+function closeSliderModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({ once: true, duration: 1000 });</script>
+
+<!-- ✅ GitHub Section with Warm Theme -->
+<section class="ftco-section ftco-hireme img margin-top"
+         style="position: relative; padding: 5rem 0; background-color: #cbbba1;">
+
+  <!-- Foreground Text -->
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-md-9 text-center" style="color: #3a2b1a;">
+        <h2 class="mb-4 fw-bold" style="font-size: 2.5rem;">
+          Explore More Projects on <span style="color: #763e2f;">GitHub</span>
+        </h2>
+        <p class="lead mb-0">
+          I love solving real-world business problems & uncovering hidden data stories through analytics.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ GitHub Button -->
+<section class="text-center py-4" style="background-color: #f5eee0;">
+  <a href="https://github.com/shreya579"
+     class="btn btn-lg github-button-custom"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="
+       background-color: #ba997a;
+       color: white;
+       padding: 12px 28px;
+       border-radius: 40px;
+       font-weight: 600;
+       box-shadow: 0 0 20px rgba(186, 153, 122, 0.4);
+       text-decoration: none;
+       transition: all 0.3s ease;">
+    Visit GitHub
+  </a>
+</section>
+
+<!-- ✅ Contact Section with Warm Background -->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section" style="background-color: #cbbba1;">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center" data-aos="fade-up">
+        <h1 class="big big-2" style="color: #d0a87b;">Contact</h1>
+        <h2 class="mb-4" style="color: #4e392b;">Contact Me</h2>
+        <p style="color: #5a4a3c;">Below are the details to reach out to me!</p>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-5">
+      <!-- Address -->
+      <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="align-self-stretch box p-4 text-center" style="background-color: #fdf8f0;">
+          <div class="icon d-flex align-items-center justify-content-center mb-3">
+            <img src="images/location-icon.png" alt="Location">
+          </div>
+          <h3 class="mb-3" style="color: #3a2b1a;">Address</h3>
+          <p style="color: #5a4a3c;">Buxar, Bihar</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="align-self-stretch box p-4 text-center" style="background-color: #fdf8f0;">
+          <div class="icon d-flex align-items-center justify-content-center mb-3">
+            <img src="images/phone-icon.png" alt="Phone">
+          </div>
+          <h3 class="mb-3" style="color: #3a2b1a;">Contact Number</h3>
+          <p><a href="tel://9508573979" style="color: #5a4a3c;">+91 9508573979</a></p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="align-self-stretch box p-4 text-center" style="background-color: #fdf8f0;">
+          <div class="icon d-flex align-items-center justify-content-center mb-3">
+            <img src="images/email-icon.png" alt="Email">
+          </div>
+          <h3 class="mb-3" style="color: #3a2b1a;">Email Address</h3>
+          <p>
+            <a href="mailto:shreyapandeyy2024@gmail.com" style="color: #5a4a3c; word-break: break-word; display: inline-block;">
+              shreyapandeyy2024@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Resume Download -->
+      <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="align-self-stretch box p-4 text-center" style="background-color: #fdf8f0;">
+          <div class="icon d-flex align-items-center justify-content-center mb-3">
+            <img src="images/resume-icon.png" alt="Resume" style="width: 50px; height: 50px;">
+          </div>
+          <h3 class="mb-3" style="color: #3a2b1a;">Download Resume</h3>
+          <a href="pdfs/Sahil_Jena_Data_Analyst_Resume_2025.pdf" download 
+             class="btn btn-sm px-4 py-2"
+             style="border-radius: 25px; font-weight: 600; background-color: #ba997a; color: white; border: none;">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ AOS Scroll Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    offset: 150
+  });
+</script>
+
+
+<!-- 🌟 Typing Animation Section with AOS Scroll Animation -->
+<section class="typing-section" style="
+  background: url('images/Analytics2.png') center center / cover no-repeat;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+">
+
+  <!-- ✅ Warm Glass Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(90, 60, 40, 0.75); /* deep warm brown tint */
+    backdrop-filter: blur(4px);
+    z-index: 0;"></div>
+
+  <!-- ✅ Foreground Typing Content with AOS -->
+  <div class="container position-relative" style="z-index: 1;" data-aos="fade-up">
+    <div class="text-center px-3 py-4">
+
+      <!-- 🔠 Heading -->
+      <h2 class="mb-3 fw-bold" style="font-size: 2.3rem; color: #f5ede2;">What I Do</h2>
+
+      <!-- 🔤 Typing Animation -->
+      <h3 id="typing-skill" class="glow-text" style="font-size: 1.5rem; font-weight: 600; min-height: 40px;">
+        <span id="typing"></span><span class="cursor">|</span>
+      </h3>
+
+      <!-- 💡 Inspirational Quote -->
+      <blockquote class="mt-4" style="font-size: 1.1rem; font-style: italic; color: #e8d8c4;">
+        “Data is a precious thing and will last longer than the systems themselves.”<br>
+        <span style="font-size: 0.95rem; font-style: normal; color: #f0e2d1;">— Tim Berners-Lee</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ Typing Animation Styles -->
+<style>
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #ba997a; /* warm accent instead of white */
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .glow-text {
+    color: #ffffff; /* strong warm brown text */
+    text-shadow: 
+      0 0 6px #ba997a,
+      0 0 12px #cbbba1,
+      0 0 20px #ac8d71;
+  }
+</style>
+
+
+<!-- ✅ Typing Effect Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const skills = [
+      "Power BI Dashboards 💡",
+      "Data Visualization 📊",
+      "SQL & Python Automation ⚙️",
+      "Business Storytelling 📈",
+      "Predictive Modeling 🧠",
+      "Machine Learning 📚",
+      "Git & GitHub Collaboration 🔧"
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    const typingSpeed = 100;
+    const erasingSpeed = 40;
+    const delayBetween = 1500;
+    const typingElement = document.getElementById("typing");
+
+    function type() {
+      if (charIndex < skills[index].length) {
+        typingElement.textContent += skills[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(erase, delayBetween);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingElement.textContent = skills[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+      } else {
+        index = (index + 1) % skills.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    setTimeout(type, 600);
+  });
+</script>
+
+<!-- ✅ AOS Scroll Animation Init -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    offset: 120
+  });
+</script>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
