@@ -1133,6 +1133,20 @@
     gap: 10px;
   }
 }
+@media (max-width: 576px) {
+    #home-section .text p.intro-text {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+    #home-section .text p.intro-text::after {
+      content: " Skilled in SQL, Python & BI Tools.";
+    }
+    /* Hide the original long text for mobile */
+    #home-section .text p.intro-text span.full-text {
+      display: none;
+    }
+  }
 </style>
 
 
@@ -1158,53 +1172,46 @@
     </div>
   </nav>
 
-  <section id="home-section" class="hero" style="background-color: #845f40;">
-    <div class="home-slider owl-carousel">
-      <div class="slider-item">
-        <div class="overlay" style="background-color: rgba(167, 123, 86, 0.5);"></div>
-        <div class="container">
-          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+<section id="home-section" class="hero" style="background-color: #845f40;">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay" style="background-color: rgba(167, 123, 86, 0.5);"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+          
+          <!-- Profile Image -->
+          <div class="one-third js-fullheight order-md-last img" style="background-image: url('images/shreya_new_background.png'); background-size: cover; border-radius: 10px;">
+            <div class="overlay" style="background: rgba(0, 0, 0, 0.4); border-radius: 10px;"></div>
+          </div>
 
-            <!-- ✅ Profile Image -->
-            <div class="one-third js-fullheight order-md-last img" style="background-image: url('images/shreya_new_background.png'); background-size: cover; border-radius: 10px;">
-              <div class="overlay" style="background: rgba(0, 0, 0, 0.4); border-radius: 10px;"></div>
-            </div>
+          <!-- Main Text -->
+          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+            <div class="text">
+              <span class="subheading" style="color: #cbbba1;">Welcome</span>
+              <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span style="color: #cbbba1;">Shreya Pandey</span></h1>
 
-            <!-- ✅ Main Text -->
-            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
-              <div class="text">
-                <span class="subheading" style="color: #cbbba1;">Welcome</span>
-                <h1 class="mb-4 mt-3" style="color: #fff;">I'm <span style="color: #cbbba1;">Shreya Pandey</span></h1>
+              <!-- Typing Role Animation -->
+              <h2><span id="typing-role" style="color: #cbbba1; font-weight: 600;"></span></h2>
 
-                <!-- ✅ Typing Role Animation -->
-                <h2><span id="typing-role" style="color: #cbbba1; font-weight: 600;"></span></h2>
-
-                <p class="mb-4 mt-3" style="color: #f5f5f5;">
+              <p class="mb-4 mt-3 intro-text" style="color: #f5f5f5;">
+                <span class="full-text">
                   Passionate about turning complex data into meaningful insights.<br>
                   Skilled in SQL, Python, Machine Learning & Visualization Tools.
-                </p>
+                </span>
+              </p>
 
-                <p>
-                  <a href="https://www.linkedin.com/in/shreya-pandey-97252431b/"
-                     class="btn custom-btn-primary py-3 px-4">
-                     LinkedIn
-                  </a>
-
-                  <a href="https://github.com/shreya579"
-                     class="btn custom-btn-outline py-3 px-4">
-                     View My Work
-                  </a>
-                </p>
-              </div>
+              <p>
+                <a href="https://www.linkedin.com/in/shreya-pandey-97252431b/" class="btn custom-btn-primary py-3 px-4">LinkedIn</a>
+                <a href="https://github.com/shreya579" class="btn custom-btn-outline py-3 px-4">View My Work</a>
+              </p>
             </div>
-
-
-
           </div>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ✅ Typing Role Script -->
   <script>
